@@ -1,0 +1,270 @@
+/* *****************************************************
+GENERAL
+***************************************************** */
+/*COLORS
+Primary Dark = #1B2355
+Pimary Light = #A0CCE3
+Secondary Dark = #F66464
+Secondary Light = #E79294
+Tertiary Dark = #8A859B
+Tertiary Mid = #BAC0BA
+Tertiary Light = #E8ECEF
+
+FONTS
+font-family: 'Contrail One', cursive;
+font-family: 'Work Sans', sans-serif;
+*/
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 24px;
+}
+
+h1 {
+  font-family: 'Contrail One', cursive;
+  margin-top: 0;
+  padding-top: 4rem;
+}
+
+p {
+  text-align: center;
+}
+
+i {
+  float: right;
+  margin-right: 1rem;
+}
+
+a.to-top {
+  color: #F66464;
+}
+
+/* *****************************************************
+NAV
+***************************************************** */
+nav {
+  background-color: #1B2355;
+  color: #fff;
+  height: 50px;
+}
+
+nav a,
+nav a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul {
+  font-size: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  width: 19vw;
+  font-size: 1.5rem;
+  border-right: 1px solid #E79294;
+  text-align: center;
+  line-height: 50px;
+}
+
+nav ul li:last-of-type {
+  border-right: 0;
+}
+
+
+/* *****************************************************
+HOME
+***************************************************** */
+
+#home {
+  height: 98vh;
+  background: url('https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif');
+  background-size: cover;
+  -webkit-filter: invert(100%);
+  -moz-filter: invert(100%)
+  filter: invert(100%);
+  color: #fff;
+  text-align: center;
+}
+
+#home h1 {
+  padding-top: 2rem;
+}
+
+#home p {
+  padding-bottom: 2rem;
+}
+
+#home header {
+  position: relative;
+  top: 40%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b2355+0,1b2355+100&0+0,0.7+16,1+52,0.7+85,0+100 */
+  background: -moz-linear-gradient(left, rgba(27,35,85,0) 0%, rgba(27,35,85,0.7) 16%, rgba(27,35,85,1) 52%, rgba(27,35,85,0.7) 85%, rgba(27,35,85,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(27,35,85,0) 0%,rgba(27,35,85,0.7) 16%,rgba(27,35,85,1) 52%,rgba(27,35,85,0.7) 85%,rgba(27,35,85,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(27,35,85,0) 0%,rgba(27,35,85,0.7) 16%,rgba(27,35,85,1) 52%,rgba(27,35,85,0.7) 85%,rgba(27,35,85,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001b2355', endColorstr='#001b2355',GradientType=1 ); /* IE6-9 */
+  padding: 0.5rem 0;
+}
+
+/* *****************************************************
+ABOUT-ME
+***************************************************** */
+
+#about-me {
+  height: 100vh;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#about-me > div {
+  height: 80%;
+}
+
+#about-me img {
+  height: 50%;
+}
+
+#about-me div div {
+  height: 50%;
+  margin: 0 5rem;
+}
+/* *****************************************************
+PROJECTS
+***************************************************** */
+
+#projects {
+  text-align: center;
+  border: 1px solid #000;
+}
+
+#projects div * {
+  margin: 0;
+}
+
+#projects div h2 {
+  padding: 1rem;
+  font-weight: bolder;
+}
+
+#projects div p {
+  margin-bottom: 0;
+  padding: 3rem;
+}
+
+#projects div:nth-child(odd) {
+  background-color: #E8ECEF;
+}
+
+#projects div:nth-child(even) {
+  background-color: #BAC0BA;
+}
+
+#projects div.portfolio-img {
+  height: 20vh;
+  background-size: cover;
+  background-position: center 15%;
+}
+
+#projects div.iron-man {
+  background-image: url(../images/IronMan.jpg);
+}
+
+#projects div.phoenix {
+  background-image: url(../images/Phoenix.jpg);
+}
+
+#projects div.storm {
+  background-image: url(../images/Storm.jpg);
+}
+
+#projects div.gambit {
+  background-image: url(../images/Gambit.jpg);
+}
+
+/* *****************************************************
+RESUME
+***************************************************** */
+
+#resume {
+  height: 100vh;
+  padding: 0 2rem 2rem 2rem;
+}
+
+#resume h1,
+#resume header,
+#resume address {
+  text-align: center;
+}
+
+#resume hr {
+  margin: 5vh auto;
+}
+
+/* *****************************************************
+CONTACT
+***************************************************** */
+
+#contact {
+  text-align: center;
+  background-color: #A0CCE3;
+  padding: 3rem;
+}
+
+#contact input,
+#contact textarea {
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  border-color: #1B2355;
+  border-width: 2px;
+  margin: 1rem 0;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px 3px rgba(255, 0, 0, 0.5)
+}
+
+#contact input {
+  height: 3rem;
+  width: 80%;
+}
+
+#contact textarea {
+  height: 10rem;
+  width: 80%;
+}
+
+#contact input[type="submit"] {
+  background-color: #F66464;
+  border-color: #F66464;
+  border-style: solid;
+  border-radius: 5px;
+  color: #fff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#contact input[type="submit"]:active {
+  background-color: #C33F3F;
+}
+
+/* *****************************************************
+ASIDE
+***************************************************** */
+
+aside i {
+  float: none;
+  text-align: center;
+  width: 30vw;
+}
+
+footer p {
+  text-align: left;
+}
+
+
+
+
+
+/* ***************************** */
